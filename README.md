@@ -49,7 +49,7 @@ ______________________________________________________________
 Parameters
 ```
 {
-  "T1": [
+  "t1": [
     {
       "text": "Any text here 01"
     },
@@ -67,13 +67,13 @@ Parameters
 Parameters
 ```
 {
-  "T2": [
+  "t2": [
     {
       "text": "Any text here table 02",
-      "T3": [
+      "t3": [
         {
           "text": "Any text here for table 03",
-          "T4": [
+          "t4": [
             {
               "text": "Any text here for table 04 - 01"
             },
@@ -83,7 +83,7 @@ Parameters
           ]
         }
       ],
-      "T5": [
+      "t5": [
         {
           "text": "Any text here 01 - Table 05"
         },
@@ -97,10 +97,10 @@ Parameters
     },
     {
       "text": "Any text here table 02 - object 2",
-      "T3": [
+      "t3": [
         {
           "text": "Any text here for table 03 - object 2",
-          "T4": [
+          "t4": [
             {
               "text": "Any text here for table 04 - 03"
             },
@@ -110,7 +110,7 @@ Parameters
           ]
         }
       ],
-      "T5": [
+      "t5": [
         {
           "text": "Any text here 04 - Table 05"
         },
@@ -130,3 +130,14 @@ ______________________________________________________________
 # Use
 * Node.js
 * Postgres
+
+# RUN
+* Get a project - Pull
+* Execute "yarn" in your terminal/cmd
+* You need execute a postgres
+* Create a new databease with name "test"
+* Execute "yarn sequelize db:migrate" in your terminal/cmd
+* Execute "yarn dev" in your terminal/cmd, to run
+* After this, you cam use isomnia at routes (POST)
+  "http://localhost:3333/t1a" and "http://localhost:3333/t2a", and use the json parameter above.
+  
